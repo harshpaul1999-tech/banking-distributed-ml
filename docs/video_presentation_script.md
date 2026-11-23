@@ -1,6 +1,6 @@
 # Video presentation script: Banking Analytics with Distributed ML
 
-**Target runtime:** about 17–18 minutes at a clear pace of roughly 120 words per minute, including short pauses to show the notebook tables. The five rubric sections are all covered. The model figures below match the executed Colab notebook.
+**Target runtime:** about 18–20 minutes at a clear pace of roughly 120–135 words per minute, including short pauses to show the notebook tables. The five rubric sections are all covered. The model figures below match the executed Colab notebook.
 
 ## 00:00–00:55 — Opening and objective
 
