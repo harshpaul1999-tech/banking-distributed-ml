@@ -6,7 +6,8 @@ A Colab-ready project using the supplied bank.csv to demonstrate five distribute
 
 ## Project contents
 
-- notebooks/Banking_Distributed_Analytics_Colab.ipynb — one guided notebook covering all five parts and linking to the source files.
+- notebooks/Banking_Distributed_Analytics_Colab.ipynb — the main guided notebook covering all five project parts.
+- notebooks/Financial_Forecasting_Frontier_Distributed_ML.ipynb — a compact Colab companion aligned with the linked reference notebook, using this repository’s dataset path.
 - data/bank.csv — the supplied 4,521-row dataset.
 - data/stream_sample/ — four small replay chunks with synthetic event IDs and event times.
 - src/hadoop/ — Hadoop Streaming mappers, reducers, and HDFS run commands.
@@ -14,15 +15,18 @@ A Colab-ready project using the supplied bank.csv to demonstrate five distribute
 - src/spark/ — batch EDA, ML pipeline, and parallel processing scripts.
 - src/streaming/ — chunk generator, paced file replay, and Structured Streaming job.
 - docs/results_and_interpretation.md — data-grounded findings and limitations.
-- docs/video_presentation_script.md — a presentation script planned for about 17–18 minutes.
+- docs/video_presentation_script.md — the original project presentation script.
+- docs/reference_colab_video_script.md — two recording scripts covering the reference PDF and PySpark notebook.
 - docs/reflection_summary.md — a reflection draft to personalize after running the notebook.
 
-## Run the Colab notebook
+## Run the Colab notebooks
 
-1. Open the Colab link above and choose Runtime → Run all.
-2. The setup cell installs the pinned PySpark dependency and prepares a local Spark session. If the notebook cannot reach the public repository, upload the repository files to the runtime or clone the repo manually.
-3. The notebook runs local Hadoop Streaming mapper/reducer replays, Spark batch analysis, cross-validated Spark ML, a bounded streaming replay, and partitioned Spark examples.
-4. Hadoop HDFS and Hive commands are included for a Hadoop/Hive cluster. Colab does not start those services automatically; the local mapper/reducer replay checks the same aggregation logic without claiming a distributed Hadoop run.
+- [Main five-part project notebook](https://colab.research.google.com/github/harshpaul1999-tech/banking-distributed-ml/blob/main/notebooks/Banking_Distributed_Analytics_Colab.ipynb)
+- [Reference-aligned Financial Forecasting Frontier companion](https://colab.research.google.com/github/harshpaul1999-tech/banking-distributed-ml/blob/main/notebooks/Financial_Forecasting_Frontier_Distributed_ML.ipynb)
+
+1. Open either notebook in Colab and choose Runtime → Run all. The companion opens the repository’s `bank.csv` rather than depending on the original notebook’s Google Drive folder path.
+2. The main notebook installs the pinned PySpark dependency and runs local Hadoop mapper/reducer replays, Spark batch analysis, Spark ML, a bounded streaming replay, and partitioned Spark examples.
+3. Hadoop HDFS and Hive commands are included for a configured cluster. Colab does not start those services automatically; the local mapper/reducer replay checks the aggregation logic without claiming a distributed Hadoop run. The companion also has an optional Gradio cell.
 
 ## Run from a local environment
 
@@ -57,7 +61,7 @@ The target is term-deposit subscription (y). The executed Spark ML pipeline reac
 
 ## Reference material
 
-The supplied telecom churn notebooks were reviewed for their EDA and ML walkthrough structure. Telecom-specific data, columns, outputs, and conclusions were not reused. The project organization also takes inspiration from [Financial Forecasting Frontier with Distributed ML](https://github.com/amol004/Financial-Forecasting-Frontier-Distributed-ML); this repository has its own code, analysis, and limitations.
+The supplied telecom churn notebooks were reviewed for their EDA and ML walkthrough structure. Telecom-specific data, columns, outputs, and conclusions are not reused. This repository includes a compact [Colab companion](notebooks/Financial_Forecasting_Frontier_Distributed_ML.ipynb) based on the linked [Financial Forecasting Frontier notebook](https://github.com/amol004/Financial-Forecasting-Frontier-Distributed-ML/blob/main/Financial_Forecasting_Frontier_Distributed_ML.ipynb) and the associated [Hadoop, MapReduce, Hive, and PySpark PDF](https://github.com/amol004/Financial-Forecasting-Frontier-Distributed-ML/blob/main/Banking%20Data%20Analysis%20with%20Hadoop%2CMapreduce%2C%20Apache%20Hive%20and%20PySpark.pdf). The companion uses this repository's dataset and documents where its workflow differs from the source notebook. The [two-part video script](docs/reference_colab_video_script.md) covers both references.
 
 The referenced ZIP download was not present at the supplied path, so the deliverables use the available bank.csv and the two notebooks in the Demo Projects folder.
 
