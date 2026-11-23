@@ -2,7 +2,7 @@
 
 A Colab-ready project using the supplied bank.csv to demonstrate five distributed-data tasks: Hadoop MapReduce and Hive SQL, Spark EDA, Spark ML classification, Structured Streaming, and data parallelism.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/harshpaul1999-tech/banking-distributed-ml/blob/main/notebooks/Banking_Distributed_Analytics_Colab.ipynb) · [Browse the repository](https://github.com/harshpaul1999-tech/banking-distributed-ml)
+[Open the notebook in Colab](https://colab.research.google.com/github/harshpaul1999-tech/banking-distributed-ml/blob/main/notebooks/Banking_Distributed_Analytics_Colab.ipynb) · [View the notebook on GitHub](https://github.com/harshpaul1999-tech/banking-distributed-ml/blob/main/notebooks/Banking_Distributed_Analytics_Colab.ipynb) · [Browse the repository](https://github.com/harshpaul1999-tech/banking-distributed-ml)
 
 ## Project contents
 
