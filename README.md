@@ -40,3 +40,6 @@ Ensure you have the following installed on your system:
 - Jupyter or Google Colab
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+## Google Colab
+
+[Open the notebook in Colab](https://colab.research.google.com/github/harshpaul1999-tech/banking-distributed-ml/blob/main/Financial_Forecasting_Frontier_Distributed_ML.ipynb). The notebook checks common locations for `bank.csv`, downloads the copy stored at the root of this repository when needed, and offers a Colab upload fallback. Its dataset cell assigns `df` before the EDA cells use it. The repository's `bank.csv` is the same file supplied for this project.
